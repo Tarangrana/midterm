@@ -4,6 +4,68 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tarang Rana</title>
+    <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body></body>
+  <body>
+    <header>
+      <nav>
+        <div class="nav-left">
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Glossary/HTML5"
+            target="_blank"
+            >HTML5</a
+          >
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+            target="_blank"
+            >JavaScript</a
+          >
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Web/CSS"
+            target="_blank"
+            >CSS</a
+          >
+        </div>
+        <div class="nav-right">
+          <button data-bs-theme-value="dark" onclick="setDarkMode()">
+            Dark
+          </button>
+          <button data-bs-theme-value="light" onclick="setLightMode()">
+            Light
+          </button>
+          <button>Contact Me</button>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="grid-container">
+        <div class="message">
+          <p>
+            Factorial calculator.<br />
+            n! = 1×2×3 … ×n.<br />
+            e.g. 5! = 120.
+          </p>
+        </div>
+
+        <div class="input-col">
+          <input type="number" id="numberInput" placeholder="Enter a number" />
+        </div>
+
+        <div class="button-col">
+          <button id="calculateBtn">Enter</button>
+        </div>
+
+        <div class="result-col">
+          <div id="resultScreen">Result will be displayed here</div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>Simple factorial calculator © 2025</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
 </html>
